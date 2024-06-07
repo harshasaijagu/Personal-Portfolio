@@ -1,0 +1,495 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #081b29;
+  color: #ededed;
+  transition: background-color 0.5s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.5s;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+}
+
+.home {
+  /* height: 100vh; */
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  transition: padding 0.5s;
+}
+
+.home-content {
+  max-width: 580px;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00abf9;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+  width: 500px;
+  display: inline-flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-box a:hover {
+  color: #00abf0;
+  background-color: #ffffff;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.profile-photo {
+  width: 370px;
+  height: 350px;
+  border-radius: 50%;
+  position: center;
+  margin-left: auto;
+  transition: transform 0.5s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+.home-sci {
+  position: absolute;
+  bottom: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.5s;
+}
+
+.home-sci a:hover {
+  color: #081b29;
+}
+
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
+
+/* Styles for experience.html */
+.experience {
+  padding: 50px 10%;
+  color: #ededed;
+  text-align: center;
+}
+
+.experience h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.line {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #00abf0;
+  transition: background-color 0.3s ease;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  background-color: #081b29;
+}
+
+.date {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  background-color: #00abf0;
+  color: #081b29;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.description {
+  margin-left: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.work-logo {
+  width: 200px;
+  height: 80px;
+  /* position: center; */
+  margin-left: auto;
+  padding-top: 10px; */
+}
+
+.description h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.description ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.project:hover {
+  transform: scale(1.1);
+  background-color: #00abf0;
+  color: #081b29;
+}
+
+.timeline1 .line {
+  background-color: #00abf0;
+}
+
+.timeline2 .line {
+  background-color: #ff6f61;
+}
+
+.timeline1:hover .line {
+  background-color: #081b29;
+}
+
+.timeline2:hover .line {
+  background-color: #2a363b;
+}
+
+/* Styles for projects.html */
+.projects {
+  padding: 50px 10%;
+  color: #ededed;
+  margin-top: 80px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.line {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #00abf0;
+  transition: background-color 0.3s ease;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  background-color: #081b29;
+}
+
+.date {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  background-color: #00abf0;
+  color: #081b29;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.description {
+  margin-left: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.description ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.project:hover {
+  transform: scale(1.1);
+  background-color: #00abf0;
+  color: #081b29;
+}
+
+.timeline1 .line {
+  background-color: #00abf0;
+}
+
+.timeline2 .line {
+  background-color: #ff6f61;
+}
+
+.timeline1:hover .line {
+  background-color: #081b29;
+}
+
+.timeline2:hover .line {
+  background-color: #2a363b;
+}
+
+
+/* Styling for Education.html */
+.education {
+  padding: 50px 10%;
+  color: #ededed;
+  margin-top: 80px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.line {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #00abf0;
+  transition: background-color 0.3s ease;
+}
+
+.study {
+  width: 100%;
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  background-color: #081b29;
+}
+
+.school-logo {
+  width: 200px;
+  height: 200px;
+  /* position: center; */
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.date {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  background-color: #00abf0;
+  color: #081b29;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.description {
+  margin-left: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+
+.description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.description ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect */
+.study:hover {
+  transform: scale(1.1);
+  background-color: #00abf0;
+  color: #081b29;
+}
+
+.timeline1 .line {
+  background-color: #00abf0;
+}
+
+.timeline2 .line {
+  background-color: #ff6f61;
+}
+
+.timeline1:hover .line {
+  background-color: #081b29;
+}
+
+.timeline2:hover .line {
+  background-color: #2a363b;
+}
